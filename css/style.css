@@ -1,0 +1,1117 @@
+:root {
+	--dominan: rgba(5, 90, 60, .9)  ;
+	--dominan-fc: rgba(5, 90, 60, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+}
+
+::-webkit-scrollbar {
+	width: 1vw;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.1);
+}
+
+
+img{
+    display: flex;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+
+body{
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(0, 0, 0, 0.9);
+    transition-duration: 0.3s;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    width: 100vw;
+    height: 6em;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    background: var(--dominan);
+    display: flex;
+    padding: 0 10% 0 10%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.header a{
+    color: rgba(255,255,255) ;
+}
+
+.logo_container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-family: 'Oswald', sans-serif;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    font-weight: 1000;
+}
+
+.logo-img{
+    width: auto;
+    height: 3.5em;
+    border-radius: 100%;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 1em;
+    margin: 0.2em;
+    transition-duration: .3s;
+}
+
+.navbar a:hover{
+    color: rgba(255, 255, 255, .75);
+    /* transform: scale(1.1); */
+}
+
+.navbar a.active2{
+    color: rgba(40, 40, 40, .75);
+}
+
+.navbar_x{
+    display: none;
+}
+
+#hamburger img{
+    width: 100%;
+    height: 3em;
+}
+
+.content{
+    width: 100%;
+    height: max-content;
+}
+
+.bagian{
+    width: 90%;
+    min-height: 65em;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.b-1{
+    padding: 5em 0 0 0;
+}
+
+.cover{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2%;
+}
+
+.sambutan {
+    width: 100%;
+}
+
+.sambutan_h1 {
+    width: 100%;
+    font-size: 4em;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.sambutan_h1 span {
+    font-size: 1.5em;
+    line-height: 1.3;
+    font-weight: 600;
+    color: var(--dominan-fc);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sambutan_h2 {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.btn_menu_container{
+    width: 100%;
+    display: flex;
+}
+
+#btn_menu {
+    font-size: 2.5em;
+    padding: 0 0.3em 0 0.3em;
+    border-radius: 0.2em;
+    color: rgb(255, 255, 255);
+    background: var(--dominan);
+}
+
+.slider-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-container-2-x{
+    display: none;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform .75s ease-in-out;
+}
+
+.card {
+    flex: 0 0 100%;
+    position: relative;
+    transition: .3s;
+}
+
+.card:hover{
+    filter: brightness(.7);
+}
+
+.card_img {
+    width: 100%;
+    height: 38em;
+}
+
+.card_judul {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.card_rekomendasi {
+    position: absolute;
+    top: 13%;
+    left: 0;
+    font-size: 1.75em;
+    font-weight: 600;
+    background: rgb(255, 225, 28);
+    color: rgba(0, 0, 0, 0.9);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+}
+
+.card_promo {
+    position: absolute;
+    top: 3%;
+    left: 0;
+    font-size: 1.75em;
+    font-weight: 600;
+    background: rgb(235, 5, 5);
+    color: rgb(255, 255, 255);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+}
+
+.arrow {
+    font-size: 3em;
+    font-weight: 800;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(0, 0, 0, 1);
+}
+
+.prev {
+    left: 0em;
+}
+
+.next {
+    right: 0em;
+}
+
+/* b-2 */
+
+.slider-container-2 {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.rekomendasi_judul {
+    font-size: 4em;
+    font-weight: 600;
+    text-indent: 1em;
+}
+
+.slider-wrapper-2 {
+    width: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.card2 {
+    width: 100%;
+    flex: 0 0 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5%;
+    padding: 0 2.5% 0 2.5%;
+}
+
+.card2-b {
+    width: 100%;
+    position: relative;
+    transition-duration: .3s;
+    background: rgba(0, 0, 0, .05);
+    border-radius: 5%;
+    overflow: hidden;
+    padding: 2.5%;
+}
+
+.card2-b:hover{
+    filter: brightness(.9);
+    background: rgba(0, 0, 0, .1);
+}
+
+.card2-b:hover .card2-b_judul{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.card2-b_img {
+    width: 100%;
+    height: 28em;
+    border-radius: 5%;
+    position: relative;
+}
+
+.card2-b_judul {
+    font-size: 2.75em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    transition-duration: .3s;
+    line-height: 1.2;
+    text-indent: 2%;
+}
+
+.card2-b_harga{
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.2;
+    text-indent: 2%;
+    color: rgba(0, 0, 0, .6);
+}
+
+.btn-beli_sekarang{
+    font-size: 2em;
+    font-weight: 600;
+    width: max-content;
+    display: flex;
+    justify-content: left;
+    padding: .5em;
+    margin: auto;
+    background: var(--dominan);
+    color: rgba(255, 255, 255, 1);
+    border-radius: .5em;
+    transition-duration: .3s;
+}
+
+.btn-beli_sekarang:hover{
+    transform: scale(1.1);
+    filter: brightness(1.25);
+}
+
+.card2-b_baru{
+    position: absolute;
+    bottom: 30%;
+    left: 2.5%;
+    font-size: 2em;
+    font-weight: 800;
+    background: rgba(0, 103, 181, .9);
+    color: rgb(255, 255, 255);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+    font-family: 'PT Serif', serif;
+}
+
+.card2-b_diskon {
+    position: absolute;
+    top: 8%;
+    left: 2.5%;
+    font-size: 1.75em;
+    font-weight: 600;
+    background: rgb(235, 5, 5);
+    color: rgb(255, 255, 255);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+}
+
+.card2-b_rekomendasi {
+    position: absolute;
+    top: 17%;
+    left: 2.5%;
+    font-size: 1.75em;
+    font-weight: 600;
+    background: rgb(255, 225, 28);
+    color: rgba(0, 0, 0, 0.9);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+}
+/* b-3 */
+.produk_baru{
+    width: 100%;
+}
+
+.produk_baru_judul{
+    font-size: 3.5em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+.produk_baru_daftar{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4em;
+    padding: 4em;
+    height: 45em;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.produk_baru_daftar::-webkit-scrollbar {
+	width: .75vw;
+}
+
+.produk_baru_daftar::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0);
+}
+
+.produk_baru_daftar::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}
+
+.produk_baru_daftar:hover::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, .15);
+}
+
+.produk_baru_daftar:hover::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, .1);
+}
+
+.produk_baru_daftar_a{
+    width: 100%;
+    height: max-content;
+    background: rgba(0,0,0,.05);
+    border-radius: 5%;
+    position: relative;
+    padding: 1em;
+}
+
+.produk_baru_daftar_img{
+    width: 100%;
+    height: 28em;
+    border-radius: 5%;
+}
+
+.produk_baru_daftar_judul {
+    font-size: 2.75em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    transition-duration: .3s;
+    line-height: 1.2;
+    text-indent: 2%;
+}
+
+.produk_baru_daftar_harga{
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1.2;
+    text-indent: 2%;
+    color: rgba(0, 0, 0, .6);
+}
+
+.produk_baru_daftar_baru{
+    position: absolute;
+    top: 8%;
+    left: .5em;
+    font-size: 2em;
+    font-weight: 800;
+    background: rgba(0, 103, 181, .9);
+    color: rgb(255, 255, 255);
+    padding: 0.2em 0.5em 0.2em 0.5em;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.9);
+    font-family: 'PT Serif', serif;
+}
+
+
+
+/* b-4*/
+
+.menu{
+    width: 100%;
+}
+
+.menu_judul{
+    font-size: 3.5em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5em;
+}
+
+.menu_daftar{
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    gap: 5%;
+}
+
+.menu_daftar_kategori{
+    display: block;
+}
+
+.menu_daftar_kategori_btn{
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-size: 2em;
+    font-weight: 600;
+    background: rgba(255,255,255,0);
+    color: rgba(0, 0, 0, 0.75);
+    transition-duration: .3s;
+    margin: 1.2em;
+    padding: .25em;
+}
+
+.menu_daftar_kategori_btn:hover{
+    box-shadow: .1em .2em .2em var(--dominan);
+}
+
+.menu_daftar_judul{
+    font-size: 2.5em;
+    font-weight: 600;
+    width: 100%;
+    text-indent: 1em;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    background: rgba(230,230,230,1);
+}
+
+.menu_daftar_menu_grid {
+    display: none;
+    filter: opacity(0);
+    height: 50em;
+    border-left: 2px solid rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.menu_daftar_menu_grid::-webkit-scrollbar {
+	width: .75vw;
+}
+
+.menu_daftar_menu_grid::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0);
+}
+
+.menu_daftar_menu_grid::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}
+
+.menu_daftar_menu_grid:hover::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, .15);
+}
+
+.menu_daftar_menu_grid:hover::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, .1);
+}
+
+.menu_daftar_container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: .75em;
+    gap: .75em;
+    margin-top: 4em;
+}
+
+.menu_daftar_a{ 
+    width: 100%;
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+    border-radius: .75em;
+    background: rgba(0, 0, 0, .03);
+    padding: .75em;  
+}
+
+.menu_daftar_a_img{
+    width: 100%;
+    height: 14em;
+    border-radius: 1em;
+}
+
+.menu_daftar_a_text{
+    text-indent: .5em;
+}
+
+.menu_daftar_a_text_judul{
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.menu_daftar_a_text_harga{
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, .7);
+    margin-bottom: .2em;
+}
+
+.btn2-beli_sekarang{
+    font-size: 1.5em;
+    font-weight: 600;
+    width: max-content;
+    display: flex;
+    justify-content: left;
+    padding: .4em;
+    margin: auto;
+    background: var(--dominan);
+    color: rgba(255, 255, 255, 1);
+    border-radius: .5em;
+    transition-duration: .3s;
+}
+
+.btn2-beli_sekarang:hover{
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.ulasan{
+    width: 100%;
+    margin: auto;
+}
+
+.kirim_ulasan{
+    width: 50%;
+    margin: 2em auto 2em auto;
+    background: rgba(0, 0, 0, 0.04);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1em;
+}
+
+#label_ulasan{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+#label_textarea{
+    background-color: rgba(0, 0, 0, .05);
+    font-size: 1.75em;
+    min-height: 4.25em;
+    resize: none;
+}
+
+.kirim_ulasan_judul{
+    font-size: 2.5em;
+    font-weight: 600;
+    width: 100%;
+}
+
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+#btn_submit{
+    width: max-content;
+    font-size: 2em;
+    background: var(--dominan);
+    padding: .25em .5em .25em .5em;
+    font-weight: 500;
+    color: rgba(255, 255, 255,1);
+    border-radius: .2em;
+    display: flex;
+    justify-content: center;
+}
+
+.ulasan_judul{
+    font-size: 3.5em;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: .5em;
+}
+
+.ulasan_daftar{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 33em;
+    gap: 2em;
+    padding: 2em;
+    height: 27em;
+    overflow-y: auto;
+}
+
+.ulasan_daftar::-webkit-scrollbar {
+	width: .75vw;
+}
+
+.ulasan_daftar::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0);
+}
+
+.ulasan_daftar::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+}
+
+.ulasan_daftar:hover::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, .15);
+}
+
+.ulasan_daftar:hover::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, .1);
+}
+
+.ulasan_daftar_a{
+    width: 100%;
+    height: max-content;
+    background: rgba(0,0,0,.04);
+    border-radius: .5em;
+    transition-duration: .3s;
+}
+
+.ulasan_daftar_a:hover{
+    box-shadow: 0 1em 1em rgba(0, 0, 0, .7);
+    transform: scale(1.05);
+}
+
+.ulasan_daftar_a_profil{
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    gap: .5em;
+}
+
+.ulasan_daftar_a_img_border{
+    width: 4em;
+    height: 4em ;
+    border-radius: 4em;
+    overflow: hidden;
+}
+
+.ulasan_daftar_a_img{
+    width: 100%;
+    height: 4em;
+}
+
+.ulasan_daftar_a_akun{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.ulasan_daftar_a_komentar{
+    padding: 1em;
+    margin: 1em;
+    border-radius: .5em;
+    background: rgba(0,0,0,.06);
+    font-size: 1.5em;
+    color: rgb(0,0,0);
+    min-height: 10em;
+}
+
+.b-5{
+    margin-bottom: 10em;
+    margin-top: 5em;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(230,230,230,1);
+    padding: 2em;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.kontak {
+    width: max-content;
+    margin: auto; 
+}
+
+.kontak_judul {
+    font-size: 1.7em;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.kontak_daftar {
+    display: flex;
+    gap: 1rem;
+}
+
+.kontak img {
+    width: 100%;
+    height: 4em;
+}
+
+#about {
+    max-width: 80%;
+    margin: auto;
+}
+
+.about_judul {
+    font-size: 1.7em;
+    text-transform: capitalize;
+}
+
+.about_deskripsi {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.alamat {
+    width: 90%;
+    margin: auto;
+}
+
+.alamat_judul{
+    font-size: 1.7em;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.alamat p{
+    font-size: 1.2em;
+}
+
+.kopirig{
+    background: rgb(0, 0, 0);
+    font-size: 1.2em;
+    text-align: center;
+    padding: .5em;
+    color: rgba(230,230,230,.75);
+}
+.active {
+    display: block;
+    filter: opacity(1);
+}
+
+@media (max-width: 1776px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1640px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1502px){
+    html{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 1366px){
+    html{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1230px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 1093px){
+    html{
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 956px){ 
+    html{
+        font-size: 7px;
+    }
+}
+
+@media (max-width: 820px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 6px;
+    }
+
+    .navbar_x{
+        display: block;
+    }
+
+    #hamburger {
+        display: block;
+      }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: rgba(230,230,230,1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s;
+        display: block;
+      }
+    
+    .navbar.active2 {
+        right: 0;
+      }
+    
+    .navbar a {
+        color: rgba(0, 0, 0, 1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+    
+    .navbar a:hover{
+        color: var(--dominan-fc);
+    }
+
+    .menu_daftar_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .menu_daftar_a_img{
+        height: 24em;
+    }
+    
+    .navbar::after {
+        transform-origin: 0 0;
+      }
+    
+    .navbar a:hover::after {
+        transform: scaleX(0.2);
+      }
+      footer{
+        width: 100%;
+    }
+} 
+
+@media (max-width: 683px){
+    html{
+        font-size: 5px;
+    }
+    .menu_daftar_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .ulasan_daftar{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+   
+@media (max-width: 425px){
+    html{
+        font-size: 5px;
+    }
+    .header{
+        width: 100%;
+    }
+
+    .bagian{
+        width: 100%;
+        height: max-content;
+        padding: 5em 0 5em 0;
+    }
+
+    .cover{
+        margin-top: 6em;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        gap: 2em;
+    }
+
+    .sambutan_h1{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .btn_menu_container{
+        width: 100%;
+    }
+
+    #btn_menu{
+        width: max-content;
+    }
+
+    .card_img {
+        width: 100%;
+        height: 40em;
+    }
+
+    .produk_baru_daftar{
+        height: max-content;
+    }
+
+    .slider-container-2{
+        display: none;
+    }
+
+    .rekomendasi_judul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-container-2-x{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2em;
+        padding: 4em;
+    }
+
+    .produk_baru_daftar{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2em;
+    }
+
+    .produk_baru_daftar_img{
+        width: 100%;
+        height: 24em;
+        border-radius: 5%;
+    }
+
+    .menu_daftar{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .menu_daftar_kategori{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 0;
+        gap: 0;
+    }
+
+    .menu_daftar_container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 4em;
+    }
+
+    .menu_daftar_menu_grid{
+        height: max-content;
+        border-left: none;
+    }
+
+    .ulasan_daftar{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media (max-width: 375px){
+    html{
+        font-size: 4px;
+    }
+    .cover{
+        margin-top: 6em;
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        gap: 2em;
+    }
+
+    .sambutan{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 320px){
+    html{
+        font-size: 3px;
+        width: 100%;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .header{
+        width: 100%;
+    }
+}
+
+
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Roboto', sans-serif;
